@@ -45,4 +45,12 @@ public class DemoServiceImpl implements DemoService{
         create.deleteFrom(REGISTER).where(REGISTER.REGISTERNO.eq(register.getRegisterno())).execute();
         return true;
     }
+
+    @Override
+    public List<Register> findAllGroudByStatus(Register register) {
+        List<Register> list = create.select().from(REGISTER).where(REGISTER.REGISTERNO.eq(register.getRegisterno())).groupBy(REGISTER.STATUS).fetchInto(Register.class);
+        return list;
+    }
+
+
 }
