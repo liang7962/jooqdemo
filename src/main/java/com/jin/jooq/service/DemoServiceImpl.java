@@ -9,6 +9,7 @@ import static com.jin.jooq.tables.Tables.REGISTER;
 
 @Service
 public class DemoServiceImpl implements DemoService{
+
     @Autowired
     private DSLContext create;
 
