@@ -1,0 +1,1019 @@
+2018-06-14 14:37:13.175  INFO 1148 --- [main] com.jin.jooq.JooqApplication             : Starting JooqApplication on DESKTOP-N6E2IPT with PID 1148 (C:\qt\git\project\jooq\target\classes started by Tiffany in C:\qt\git\project\jooq)
+2018-06-14 14:37:13.181  INFO 1148 --- [main] com.jin.jooq.JooqApplication             : No active profile set, falling back to default profiles: default
+2018-06-14 14:37:13.294  INFO 1148 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@778d1062: startup date [Thu Jun 14 14:37:13 CST 2018]; root of context hierarchy
+2018-06-14 14:37:14.413  INFO 1148 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-06-14 14:37:15.034  INFO 1148 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e5741df1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-14 14:37:15.448  INFO 1148 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-06-14 14:37:15.483  INFO 1148 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-06-14 14:37:15.484  INFO 1148 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-06-14 14:37:15.492  INFO 1148 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_121\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Java\jdk1.8.0_121\bin\;C:\ORACLE\instantclient_11_2;C:\Program Files\Java\jdk1.8.0_121\jre\bin;C:\Android\android-sdk-windows;C:\Android\android-sdk-windows\platforms;C:\Android\android-sdk-windows\tools;C:\Program Files (x86)\Appium\node_modules\.bin;C:\Program Files (x86)\Appium;C:\Software\apache-maven-3.3.9\bin;C:\qt\git\Git\cmd;C:\qt\node\;C:\Users\Tiffany\AppData\Local\Microsoft\WindowsApps;C:\Users\Tiffany\AppData\Roaming\npm;.]
+2018-06-14 14:37:15.766  INFO 1148 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-06-14 14:37:15.767  INFO 1148 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2473 ms
+2018-06-14 14:37:15.952  INFO 1148 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-06-14 14:37:15.962  INFO 1148 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-06-14 14:37:15.962  INFO 1148 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-06-14 14:37:15.963  INFO 1148 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-06-14 14:37:15.963  INFO 1148 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-06-14 14:37:16.957  INFO 1148 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-14 14:37:17.231  INFO 1148 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@778d1062: startup date [Thu Jun 14 14:37:13 CST 2018]; root of context hierarchy
+2018-06-14 14:37:17.297  INFO 1148 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/demo]}" onto public java.lang.String com.jin.jooq.controller.DemoController.demoController()
+2018-06-14 14:37:17.303  INFO 1148 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-06-14 14:37:17.305  INFO 1148 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-06-14 14:37:17.338  INFO 1148 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-14 14:37:17.339  INFO 1148 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-14 14:37:18.100  INFO 1148 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-06-14 14:37:18.103  INFO 1148 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-06-14 14:37:18.109  INFO 1148 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-06-14 14:37:18.159  INFO 1148 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-06-14 14:37:18.165  INFO 1148 --- [main] com.jin.jooq.JooqApplication             : Started JooqApplication in 5.802 seconds (JVM running for 8.435)
+2018-06-14 14:42:59.709  INFO 9860 --- [main] com.jin.jooq.JooqApplication             : Starting JooqApplication on DESKTOP-N6E2IPT with PID 9860 (C:\qt\git\project\jooq\target\classes started by Tiffany in C:\qt\git\project\jooq)
+2018-06-14 14:42:59.723  INFO 9860 --- [main] com.jin.jooq.JooqApplication             : No active profile set, falling back to default profiles: default
+2018-06-14 14:42:59.822  INFO 9860 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7ee955a8: startup date [Thu Jun 14 14:42:59 CST 2018]; root of context hierarchy
+2018-06-14 14:43:00.958  INFO 9860 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-06-14 14:43:01.435  INFO 9860 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9a0f2bf4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-14 14:43:01.594  WARN 9860 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tomcatServletWebServerFactory' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/ServletWebServerFactoryConfiguration$EmbeddedTomcat.class]: Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: ContextPath must start with '/' and not end with '/'
+2018-06-14 14:43:01.605  INFO 9860 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2018-06-14 14:43:01.620 ERROR 9860 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tomcatServletWebServerFactory' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/ServletWebServerFactoryConfiguration$EmbeddedTomcat.class]: Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: ContextPath must start with '/' and not end with '/'
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:155) ~[spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:544) ~[spring-context-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140) ~[spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759) [spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:395) [spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327) [spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1255) [spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1243) [spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at com.jin.jooq.JooqApplication.main(JooqApplication.java:10) [classes/:na]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tomcatServletWebServerFactory' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/ServletWebServerFactoryConfiguration$EmbeddedTomcat.class]: Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: ContextPath must start with '/' and not end with '/'
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:587) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:501) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getWebServerFactory(ServletWebServerApplicationContext.java:214) ~[spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:178) ~[spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:152) ~[spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	... 8 common frames omitted
+Caused by: java.lang.IllegalArgumentException: ContextPath must start with '/' and not end with '/'
+	at org.springframework.boot.web.servlet.server.AbstractServletWebServerFactory.checkContextPath(AbstractServletWebServerFactory.java:137) ~[spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.web.servlet.server.AbstractServletWebServerFactory.setContextPath(AbstractServletWebServerFactory.java:125) ~[spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.context.properties.PropertyMapper$Source.to(PropertyMapper.java:304) ~[spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.autoconfigure.web.servlet.ServletWebServerFactoryCustomizer.customize(ServletWebServerFactoryCustomizer.java:55) ~[spring-boot-autoconfigure-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.autoconfigure.web.servlet.ServletWebServerFactoryCustomizer.customize(ServletWebServerFactoryCustomizer.java:35) ~[spring-boot-autoconfigure-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.web.server.WebServerFactoryCustomizerBeanPostProcessor.lambda$postProcessBeforeInitialization$0(WebServerFactoryCustomizerBeanPostProcessor.java:78) ~[spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.util.LambdaSafe$Callbacks.lambda$null$0(LambdaSafe.java:291) ~[spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.util.LambdaSafe$LambdaSafeCallback.invoke(LambdaSafe.java:162) ~[spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.util.LambdaSafe$Callbacks.lambda$invoke$1(LambdaSafe.java:290) ~[spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at java.util.ArrayList.forEach(ArrayList.java:1249) ~[na:1.8.0_121]
+	at java.util.Collections$UnmodifiableCollection.forEach(Collections.java:1080) ~[na:1.8.0_121]
+	at org.springframework.boot.util.LambdaSafe$Callbacks.invoke(LambdaSafe.java:289) ~[spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.web.server.WebServerFactoryCustomizerBeanPostProcessor.postProcessBeforeInitialization(WebServerFactoryCustomizerBeanPostProcessor.java:78) ~[spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.web.server.WebServerFactoryCustomizerBeanPostProcessor.postProcessBeforeInitialization(WebServerFactoryCustomizerBeanPostProcessor.java:61) ~[spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:422) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1698) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:579) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	... 16 common frames omitted
+
+2018-06-14 14:44:08.485  INFO 6564 --- [main] com.jin.jooq.JooqApplication             : Starting JooqApplication on DESKTOP-N6E2IPT with PID 6564 (C:\qt\git\project\jooq\target\classes started by Tiffany in C:\qt\git\project\jooq)
+2018-06-14 14:44:08.492  INFO 6564 --- [main] com.jin.jooq.JooqApplication             : No active profile set, falling back to default profiles: default
+2018-06-14 14:44:08.647  INFO 6564 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@96def03: startup date [Thu Jun 14 14:44:08 CST 2018]; root of context hierarchy
+2018-06-14 14:44:10.237  INFO 6564 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-06-14 14:44:10.852  INFO 6564 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ad73489f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-14 14:44:11.032  WARN 6564 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tomcatServletWebServerFactory' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/ServletWebServerFactoryConfiguration$EmbeddedTomcat.class]: Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: ContextPath must start with '/' and not end with '/'
+2018-06-14 14:44:11.042  INFO 6564 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2018-06-14 14:44:11.073 ERROR 6564 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tomcatServletWebServerFactory' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/ServletWebServerFactoryConfiguration$EmbeddedTomcat.class]: Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: ContextPath must start with '/' and not end with '/'
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:155) ~[spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:544) ~[spring-context-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140) ~[spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759) [spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:395) [spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327) [spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1255) [spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1243) [spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at com.jin.jooq.JooqApplication.main(JooqApplication.java:10) [classes/:na]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tomcatServletWebServerFactory' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/ServletWebServerFactoryConfiguration$EmbeddedTomcat.class]: Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: ContextPath must start with '/' and not end with '/'
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:587) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:501) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getWebServerFactory(ServletWebServerApplicationContext.java:214) ~[spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:178) ~[spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:152) ~[spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	... 8 common frames omitted
+Caused by: java.lang.IllegalArgumentException: ContextPath must start with '/' and not end with '/'
+	at org.springframework.boot.web.servlet.server.AbstractServletWebServerFactory.checkContextPath(AbstractServletWebServerFactory.java:137) ~[spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.web.servlet.server.AbstractServletWebServerFactory.setContextPath(AbstractServletWebServerFactory.java:125) ~[spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.context.properties.PropertyMapper$Source.to(PropertyMapper.java:304) ~[spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.autoconfigure.web.servlet.ServletWebServerFactoryCustomizer.customize(ServletWebServerFactoryCustomizer.java:55) ~[spring-boot-autoconfigure-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.autoconfigure.web.servlet.ServletWebServerFactoryCustomizer.customize(ServletWebServerFactoryCustomizer.java:35) ~[spring-boot-autoconfigure-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.web.server.WebServerFactoryCustomizerBeanPostProcessor.lambda$postProcessBeforeInitialization$0(WebServerFactoryCustomizerBeanPostProcessor.java:78) ~[spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.util.LambdaSafe$Callbacks.lambda$null$0(LambdaSafe.java:291) ~[spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.util.LambdaSafe$LambdaSafeCallback.invoke(LambdaSafe.java:162) ~[spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.util.LambdaSafe$Callbacks.lambda$invoke$1(LambdaSafe.java:290) ~[spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at java.util.ArrayList.forEach(ArrayList.java:1249) ~[na:1.8.0_121]
+	at java.util.Collections$UnmodifiableCollection.forEach(Collections.java:1080) ~[na:1.8.0_121]
+	at org.springframework.boot.util.LambdaSafe$Callbacks.invoke(LambdaSafe.java:289) ~[spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.web.server.WebServerFactoryCustomizerBeanPostProcessor.postProcessBeforeInitialization(WebServerFactoryCustomizerBeanPostProcessor.java:78) ~[spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.web.server.WebServerFactoryCustomizerBeanPostProcessor.postProcessBeforeInitialization(WebServerFactoryCustomizerBeanPostProcessor.java:61) ~[spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:422) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1698) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:579) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	... 16 common frames omitted
+
+2018-06-14 14:45:11.665  INFO 5804 --- [main] com.jin.jooq.JooqApplication             : Starting JooqApplication on DESKTOP-N6E2IPT with PID 5804 (C:\qt\git\project\jooq\target\classes started by Tiffany in C:\qt\git\project\jooq)
+2018-06-14 14:45:11.669  INFO 5804 --- [main] com.jin.jooq.JooqApplication             : No active profile set, falling back to default profiles: default
+2018-06-14 14:45:11.755  INFO 5804 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1f0f1111: startup date [Thu Jun 14 14:45:11 CST 2018]; root of context hierarchy
+2018-06-14 14:45:13.000  INFO 5804 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-06-14 14:45:13.483  INFO 5804 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$94c2dd59] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-14 14:45:13.637  WARN 5804 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tomcatServletWebServerFactory' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/ServletWebServerFactoryConfiguration$EmbeddedTomcat.class]: Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: ContextPath must start with '/' and not end with '/'
+2018-06-14 14:45:13.656  INFO 5804 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2018-06-14 14:45:13.668 ERROR 5804 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tomcatServletWebServerFactory' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/ServletWebServerFactoryConfiguration$EmbeddedTomcat.class]: Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: ContextPath must start with '/' and not end with '/'
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:155) ~[spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:544) ~[spring-context-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140) ~[spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759) [spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:395) [spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327) [spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1255) [spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1243) [spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at com.jin.jooq.JooqApplication.main(JooqApplication.java:10) [classes/:na]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tomcatServletWebServerFactory' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/ServletWebServerFactoryConfiguration$EmbeddedTomcat.class]: Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: ContextPath must start with '/' and not end with '/'
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:587) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:501) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getWebServerFactory(ServletWebServerApplicationContext.java:214) ~[spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:178) ~[spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:152) ~[spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	... 8 common frames omitted
+Caused by: java.lang.IllegalArgumentException: ContextPath must start with '/' and not end with '/'
+	at org.springframework.boot.web.servlet.server.AbstractServletWebServerFactory.checkContextPath(AbstractServletWebServerFactory.java:137) ~[spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.web.servlet.server.AbstractServletWebServerFactory.setContextPath(AbstractServletWebServerFactory.java:125) ~[spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.context.properties.PropertyMapper$Source.to(PropertyMapper.java:304) ~[spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.autoconfigure.web.servlet.ServletWebServerFactoryCustomizer.customize(ServletWebServerFactoryCustomizer.java:55) ~[spring-boot-autoconfigure-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.autoconfigure.web.servlet.ServletWebServerFactoryCustomizer.customize(ServletWebServerFactoryCustomizer.java:35) ~[spring-boot-autoconfigure-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.web.server.WebServerFactoryCustomizerBeanPostProcessor.lambda$postProcessBeforeInitialization$0(WebServerFactoryCustomizerBeanPostProcessor.java:78) ~[spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.util.LambdaSafe$Callbacks.lambda$null$0(LambdaSafe.java:291) ~[spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.util.LambdaSafe$LambdaSafeCallback.invoke(LambdaSafe.java:162) ~[spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.util.LambdaSafe$Callbacks.lambda$invoke$1(LambdaSafe.java:290) ~[spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at java.util.ArrayList.forEach(ArrayList.java:1249) ~[na:1.8.0_121]
+	at java.util.Collections$UnmodifiableCollection.forEach(Collections.java:1080) ~[na:1.8.0_121]
+	at org.springframework.boot.util.LambdaSafe$Callbacks.invoke(LambdaSafe.java:289) ~[spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.web.server.WebServerFactoryCustomizerBeanPostProcessor.postProcessBeforeInitialization(WebServerFactoryCustomizerBeanPostProcessor.java:78) ~[spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.web.server.WebServerFactoryCustomizerBeanPostProcessor.postProcessBeforeInitialization(WebServerFactoryCustomizerBeanPostProcessor.java:61) ~[spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:422) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1698) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:579) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	... 16 common frames omitted
+
+2018-06-14 14:46:23.332  INFO 14136 --- [main] com.jin.jooq.JooqApplication             : Starting JooqApplication on DESKTOP-N6E2IPT with PID 14136 (C:\qt\git\project\jooq\target\classes started by Tiffany in C:\qt\git\project\jooq)
+2018-06-14 14:46:23.338  INFO 14136 --- [main] com.jin.jooq.JooqApplication             : No active profile set, falling back to default profiles: default
+2018-06-14 14:46:23.432  INFO 14136 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@670002: startup date [Thu Jun 14 14:46:23 CST 2018]; root of context hierarchy
+2018-06-14 14:46:24.543  INFO 14136 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-06-14 14:46:25.053  INFO 14136 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4d6e2ad5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-14 14:46:25.208  WARN 14136 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tomcatServletWebServerFactory' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/ServletWebServerFactoryConfiguration$EmbeddedTomcat.class]: Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: ContextPath must start with '/' and not end with '/'
+2018-06-14 14:46:25.218  INFO 14136 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2018-06-14 14:46:25.231 ERROR 14136 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tomcatServletWebServerFactory' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/ServletWebServerFactoryConfiguration$EmbeddedTomcat.class]: Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: ContextPath must start with '/' and not end with '/'
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:155) ~[spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:544) ~[spring-context-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140) ~[spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759) [spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:395) [spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327) [spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1255) [spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1243) [spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at com.jin.jooq.JooqApplication.main(JooqApplication.java:10) [classes/:na]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tomcatServletWebServerFactory' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/ServletWebServerFactoryConfiguration$EmbeddedTomcat.class]: Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: ContextPath must start with '/' and not end with '/'
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:587) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:501) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getWebServerFactory(ServletWebServerApplicationContext.java:214) ~[spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:178) ~[spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:152) ~[spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	... 8 common frames omitted
+Caused by: java.lang.IllegalArgumentException: ContextPath must start with '/' and not end with '/'
+	at org.springframework.boot.web.servlet.server.AbstractServletWebServerFactory.checkContextPath(AbstractServletWebServerFactory.java:137) ~[spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.web.servlet.server.AbstractServletWebServerFactory.setContextPath(AbstractServletWebServerFactory.java:125) ~[spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.context.properties.PropertyMapper$Source.to(PropertyMapper.java:304) ~[spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.autoconfigure.web.servlet.ServletWebServerFactoryCustomizer.customize(ServletWebServerFactoryCustomizer.java:55) ~[spring-boot-autoconfigure-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.autoconfigure.web.servlet.ServletWebServerFactoryCustomizer.customize(ServletWebServerFactoryCustomizer.java:35) ~[spring-boot-autoconfigure-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.web.server.WebServerFactoryCustomizerBeanPostProcessor.lambda$postProcessBeforeInitialization$0(WebServerFactoryCustomizerBeanPostProcessor.java:78) ~[spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.util.LambdaSafe$Callbacks.lambda$null$0(LambdaSafe.java:291) ~[spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.util.LambdaSafe$LambdaSafeCallback.invoke(LambdaSafe.java:162) ~[spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.util.LambdaSafe$Callbacks.lambda$invoke$1(LambdaSafe.java:290) ~[spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at java.util.ArrayList.forEach(ArrayList.java:1249) ~[na:1.8.0_121]
+	at java.util.Collections$UnmodifiableCollection.forEach(Collections.java:1080) ~[na:1.8.0_121]
+	at org.springframework.boot.util.LambdaSafe$Callbacks.invoke(LambdaSafe.java:289) ~[spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.web.server.WebServerFactoryCustomizerBeanPostProcessor.postProcessBeforeInitialization(WebServerFactoryCustomizerBeanPostProcessor.java:78) ~[spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.web.server.WebServerFactoryCustomizerBeanPostProcessor.postProcessBeforeInitialization(WebServerFactoryCustomizerBeanPostProcessor.java:61) ~[spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:422) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1698) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:579) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	... 16 common frames omitted
+
+2018-06-14 14:47:28.997  INFO 4000 --- [main] com.jin.jooq.JooqApplication             : Starting JooqApplication on DESKTOP-N6E2IPT with PID 4000 (C:\qt\git\project\jooq\target\classes started by Tiffany in C:\qt\git\project\jooq)
+2018-06-14 14:47:29.002  INFO 4000 --- [main] com.jin.jooq.JooqApplication             : No active profile set, falling back to default profiles: default
+2018-06-14 14:47:29.104  INFO 4000 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@670002: startup date [Thu Jun 14 14:47:29 CST 2018]; root of context hierarchy
+2018-06-14 14:47:30.281  INFO 4000 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-06-14 14:47:30.795  INFO 4000 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$2d35038] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-14 14:47:31.031  WARN 4000 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tomcatServletWebServerFactory' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/ServletWebServerFactoryConfiguration$EmbeddedTomcat.class]: Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: ContextPath must start with '/' and not end with '/'
+2018-06-14 14:47:31.043  INFO 4000 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2018-06-14 14:47:31.058 ERROR 4000 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tomcatServletWebServerFactory' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/ServletWebServerFactoryConfiguration$EmbeddedTomcat.class]: Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: ContextPath must start with '/' and not end with '/'
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:155) ~[spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:544) ~[spring-context-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140) ~[spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759) [spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:395) [spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327) [spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1255) [spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1243) [spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at com.jin.jooq.JooqApplication.main(JooqApplication.java:10) [classes/:na]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tomcatServletWebServerFactory' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/ServletWebServerFactoryConfiguration$EmbeddedTomcat.class]: Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: ContextPath must start with '/' and not end with '/'
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:587) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:501) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getWebServerFactory(ServletWebServerApplicationContext.java:214) ~[spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:178) ~[spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:152) ~[spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	... 8 common frames omitted
+Caused by: java.lang.IllegalArgumentException: ContextPath must start with '/' and not end with '/'
+	at org.springframework.boot.web.servlet.server.AbstractServletWebServerFactory.checkContextPath(AbstractServletWebServerFactory.java:137) ~[spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.web.servlet.server.AbstractServletWebServerFactory.setContextPath(AbstractServletWebServerFactory.java:125) ~[spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.context.properties.PropertyMapper$Source.to(PropertyMapper.java:304) ~[spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.autoconfigure.web.servlet.ServletWebServerFactoryCustomizer.customize(ServletWebServerFactoryCustomizer.java:55) ~[spring-boot-autoconfigure-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.autoconfigure.web.servlet.ServletWebServerFactoryCustomizer.customize(ServletWebServerFactoryCustomizer.java:35) ~[spring-boot-autoconfigure-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.web.server.WebServerFactoryCustomizerBeanPostProcessor.lambda$postProcessBeforeInitialization$0(WebServerFactoryCustomizerBeanPostProcessor.java:78) ~[spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.util.LambdaSafe$Callbacks.lambda$null$0(LambdaSafe.java:291) ~[spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.util.LambdaSafe$LambdaSafeCallback.invoke(LambdaSafe.java:162) ~[spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.util.LambdaSafe$Callbacks.lambda$invoke$1(LambdaSafe.java:290) ~[spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at java.util.ArrayList.forEach(ArrayList.java:1249) ~[na:1.8.0_121]
+	at java.util.Collections$UnmodifiableCollection.forEach(Collections.java:1080) ~[na:1.8.0_121]
+	at org.springframework.boot.util.LambdaSafe$Callbacks.invoke(LambdaSafe.java:289) ~[spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.web.server.WebServerFactoryCustomizerBeanPostProcessor.postProcessBeforeInitialization(WebServerFactoryCustomizerBeanPostProcessor.java:78) ~[spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.web.server.WebServerFactoryCustomizerBeanPostProcessor.postProcessBeforeInitialization(WebServerFactoryCustomizerBeanPostProcessor.java:61) ~[spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:422) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1698) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:579) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	... 16 common frames omitted
+
+2018-06-14 14:49:32.095  INFO 13032 --- [main] com.jin.jooq.JooqApplication             : Starting JooqApplication on DESKTOP-N6E2IPT with PID 13032 (C:\qt\git\project\jooq\target\classes started by Tiffany in C:\qt\git\project\jooq)
+2018-06-14 14:49:32.101  INFO 13032 --- [main] com.jin.jooq.JooqApplication             : No active profile set, falling back to default profiles: default
+2018-06-14 14:49:32.240  INFO 13032 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@778d1062: startup date [Thu Jun 14 14:49:32 CST 2018]; root of context hierarchy
+2018-06-14 14:49:33.862  INFO 13032 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-06-14 14:49:34.459  INFO 13032 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$622c8f2e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-14 14:49:35.300  WARN 13032 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is java.lang.IllegalArgumentException: Error page location [jooq/error] must start with a '/'
+2018-06-14 14:49:35.347  INFO 13032 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2018-06-14 14:49:35.369 ERROR 13032 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is java.lang.IllegalArgumentException: Error page location [jooq/error] must start with a '/'
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:155) ~[spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:544) ~[spring-context-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140) ~[spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759) [spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:395) [spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327) [spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1255) [spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1243) [spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at com.jin.jooq.JooqApplication.main(JooqApplication.java:10) [classes/:na]
+Caused by: java.lang.IllegalArgumentException: Error page location [jooq/error] must start with a '/'
+	at org.apache.catalina.core.StandardContext.addErrorPage(StandardContext.java:2930) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.boot.web.embedded.tomcat.TomcatErrorPage.addToContext(TomcatErrorPage.java:75) ~[spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.configureContext(TomcatServletWebServerFactory.java:343) ~[spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.prepareContext(TomcatServletWebServerFactory.java:218) ~[spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:173) ~[spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:179) ~[spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:152) ~[spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	... 8 common frames omitted
+
+2018-06-14 14:50:44.317  INFO 17156 --- [main] com.jin.jooq.JooqApplication             : Starting JooqApplication on DESKTOP-N6E2IPT with PID 17156 (C:\qt\git\project\jooq\target\classes started by Tiffany in C:\qt\git\project\jooq)
+2018-06-14 14:50:44.324  INFO 17156 --- [main] com.jin.jooq.JooqApplication             : No active profile set, falling back to default profiles: default
+2018-06-14 14:50:44.504  INFO 17156 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5ccddd20: startup date [Thu Jun 14 14:50:44 CST 2018]; root of context hierarchy
+2018-06-14 14:50:45.684  INFO 17156 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-06-14 14:50:46.145  INFO 17156 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$463cc25f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-14 14:50:46.505  INFO 17156 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-06-14 14:50:46.537  INFO 17156 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-06-14 14:50:46.538  INFO 17156 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-06-14 14:50:46.543  INFO 17156 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_121\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Java\jdk1.8.0_121\bin\;C:\ORACLE\instantclient_11_2;C:\Program Files\Java\jdk1.8.0_121\jre\bin;C:\Android\android-sdk-windows;C:\Android\android-sdk-windows\platforms;C:\Android\android-sdk-windows\tools;C:\Program Files (x86)\Appium\node_modules\.bin;C:\Program Files (x86)\Appium;C:\Software\apache-maven-3.3.9\bin;C:\qt\git\Git\cmd;C:\qt\node\;C:\Users\Tiffany\AppData\Local\Microsoft\WindowsApps;C:\Users\Tiffany\AppData\Roaming\npm;.]
+2018-06-14 14:50:46.668  INFO 17156 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/jooq]   : Initializing Spring embedded WebApplicationContext
+2018-06-14 14:50:46.668  INFO 17156 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2164 ms
+2018-06-14 14:50:46.906  INFO 17156 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-06-14 14:50:46.926  INFO 17156 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-06-14 14:50:46.927  INFO 17156 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-06-14 14:50:46.930  INFO 17156 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-06-14 14:50:46.934  INFO 17156 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-06-14 14:50:47.656  WARN 17156 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'startApplicationSuccessListener': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'server.servlet.path' in value "${server.servlet.path}"
+2018-06-14 14:50:47.660  INFO 17156 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2018-06-14 14:50:47.828  INFO 17156 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2018-06-14 14:50:47.841 ERROR 17156 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'startApplicationSuccessListener': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'server.servlet.path' in value "${server.servlet.path}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:379) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1348) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:578) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:501) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:760) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:869) ~[spring-context-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550) ~[spring-context-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140) ~[spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759) [spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:395) [spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327) [spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1255) [spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1243) [spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at com.jin.jooq.JooqApplication.main(JooqApplication.java:10) [classes/:na]
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'server.servlet.path' in value "${server.servlet.path}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:172) ~[spring-core-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:124) ~[spring-core-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:237) ~[spring-core-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:211) ~[spring-core-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:175) ~[spring-context-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:839) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1086) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1065) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:584) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:91) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:373) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	... 17 common frames omitted
+
+2018-06-14 14:51:25.206  INFO 15728 --- [main] com.jin.jooq.JooqApplication             : Starting JooqApplication on DESKTOP-N6E2IPT with PID 15728 (C:\qt\git\project\jooq\target\classes started by Tiffany in C:\qt\git\project\jooq)
+2018-06-14 14:51:25.214  INFO 15728 --- [main] com.jin.jooq.JooqApplication             : No active profile set, falling back to default profiles: default
+2018-06-14 14:51:25.341  INFO 15728 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6ac13091: startup date [Thu Jun 14 14:51:25 CST 2018]; root of context hierarchy
+2018-06-14 14:51:26.635  INFO 15728 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-06-14 14:51:27.213  INFO 15728 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$463cc25f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-14 14:51:27.611  INFO 15728 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-06-14 14:51:27.648  INFO 15728 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-06-14 14:51:27.650  INFO 15728 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-06-14 14:51:27.657  INFO 15728 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_121\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Java\jdk1.8.0_121\bin\;C:\ORACLE\instantclient_11_2;C:\Program Files\Java\jdk1.8.0_121\jre\bin;C:\Android\android-sdk-windows;C:\Android\android-sdk-windows\platforms;C:\Android\android-sdk-windows\tools;C:\Program Files (x86)\Appium\node_modules\.bin;C:\Program Files (x86)\Appium;C:\Software\apache-maven-3.3.9\bin;C:\qt\git\Git\cmd;C:\qt\node\;C:\Users\Tiffany\AppData\Local\Microsoft\WindowsApps;C:\Users\Tiffany\AppData\Roaming\npm;.]
+2018-06-14 14:51:27.785  INFO 15728 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/jooq]   : Initializing Spring embedded WebApplicationContext
+2018-06-14 14:51:27.785  INFO 15728 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2444 ms
+2018-06-14 14:51:27.977  INFO 15728 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-06-14 14:51:27.984  INFO 15728 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-06-14 14:51:27.985  INFO 15728 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-06-14 14:51:27.985  INFO 15728 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-06-14 14:51:27.986  INFO 15728 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-06-14 14:51:28.959  INFO 15728 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-14 14:51:29.275  INFO 15728 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6ac13091: startup date [Thu Jun 14 14:51:25 CST 2018]; root of context hierarchy
+2018-06-14 14:51:29.335  INFO 15728 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/demo]}" onto public java.lang.String com.jin.jooq.controller.DemoController.demoController()
+2018-06-14 14:51:29.343  INFO 15728 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-06-14 14:51:29.345  INFO 15728 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-06-14 14:51:29.376  INFO 15728 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-14 14:51:29.376  INFO 15728 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-14 14:51:30.227  INFO 15728 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-06-14 14:51:30.230  INFO 15728 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-06-14 14:51:30.239  INFO 15728 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-06-14 14:51:30.288  INFO 15728 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/jooq'
+2018-06-14 14:51:30.293  INFO 15728 --- [main] com.jin.jooq.JooqApplication             : Started JooqApplication in 5.935 seconds (JVM running for 7.823)
+2018-06-14 14:51:30.298  INFO 15728 --- [main] c.j.j.l.StartApplicationSuccessListener  : **********************************************************************************
+2018-06-14 14:51:30.299  INFO 15728 --- [main] c.j.j.l.StartApplicationSuccessListener  : *******************   PATH: 127.0.0.1:8080/jooq/   ******************
+2018-06-14 14:51:30.299  INFO 15728 --- [main] c.j.j.l.StartApplicationSuccessListener  : **********************************************************************************
+2018-06-14 14:51:53.189  INFO 15728 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/jooq]   : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-06-14 14:51:53.190  INFO 15728 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-06-14 14:51:53.230  INFO 15728 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 39 ms
+2018-06-14 14:51:53.622  INFO 15728 --- [http-nio-8080-exec-1] org.jooq.Constants                       : 
+                                      
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@  @@        @@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@        @@@@@@@@@@
+@@@@@@@@@@@@@@@@  @@  @@    @@@@@@@@@@
+@@@@@@@@@@  @@@@  @@  @@    @@@@@@@@@@
+@@@@@@@@@@        @@        @@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@        @@        @@@@@@@@@@
+@@@@@@@@@@    @@  @@  @@@@  @@@@@@@@@@
+@@@@@@@@@@    @@  @@  @@@@  @@@@@@@@@@
+@@@@@@@@@@        @@  @  @  @@@@@@@@@@
+@@@@@@@@@@        @@        @@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@  @@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  Thank you for using jOOQ 3.10.7
+                                      
+2018-06-14 14:51:53.684  INFO 15728 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-06-14 14:51:53.924  INFO 15728 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-06-14 15:19:55.978  INFO 5488 --- [main] com.jin.jooq.JooqApplication             : Starting JooqApplication on DESKTOP-N6E2IPT with PID 5488 (C:\qt\git\project\jooq\target\classes started by Tiffany in C:\qt\git\project\jooq)
+2018-06-14 15:19:55.985  INFO 5488 --- [main] com.jin.jooq.JooqApplication             : No active profile set, falling back to default profiles: default
+2018-06-14 15:19:56.082  INFO 5488 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@48fa0f47: startup date [Thu Jun 14 15:19:56 CST 2018]; root of context hierarchy
+2018-06-14 15:19:57.344  INFO 5488 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-06-14 15:19:58.258  INFO 5488 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9a0f2bf4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-14 15:19:58.622  INFO 5488 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-06-14 15:19:58.652  INFO 5488 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-06-14 15:19:58.653  INFO 5488 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-06-14 15:19:58.659  INFO 5488 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_121\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Java\jdk1.8.0_121\bin\;C:\ORACLE\instantclient_11_2;C:\Program Files\Java\jdk1.8.0_121\jre\bin;C:\Android\android-sdk-windows;C:\Android\android-sdk-windows\platforms;C:\Android\android-sdk-windows\tools;C:\Program Files (x86)\Appium\node_modules\.bin;C:\Program Files (x86)\Appium;C:\Software\apache-maven-3.3.9\bin;C:\qt\git\Git\cmd;C:\qt\node\;C:\Users\Tiffany\AppData\Local\Microsoft\WindowsApps;C:\Users\Tiffany\AppData\Roaming\npm;.]
+2018-06-14 15:19:58.798  INFO 5488 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/jooq]   : Initializing Spring embedded WebApplicationContext
+2018-06-14 15:19:58.798  INFO 5488 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2716 ms
+2018-06-14 15:19:59.011  INFO 5488 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-06-14 15:19:59.023  INFO 5488 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-06-14 15:19:59.024  INFO 5488 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-06-14 15:19:59.024  INFO 5488 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-06-14 15:19:59.025  INFO 5488 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-06-14 15:19:59.937  INFO 5488 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-14 15:20:00.573  INFO 5488 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@48fa0f47: startup date [Thu Jun 14 15:19:56 CST 2018]; root of context hierarchy
+2018-06-14 15:20:00.678  INFO 5488 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/demo]}" onto public java.lang.String com.jin.jooq.controller.DemoController.demoController()
+2018-06-14 15:20:00.680  INFO 5488 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/demo2]}" onto public java.lang.String com.jin.jooq.controller.DemoController.demoController2()
+2018-06-14 15:20:00.687  INFO 5488 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-06-14 15:20:00.688  INFO 5488 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-06-14 15:20:00.719  INFO 5488 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-14 15:20:00.720  INFO 5488 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-14 15:20:01.628  INFO 5488 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-06-14 15:20:01.633  INFO 5488 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-06-14 15:20:01.643  INFO 5488 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-06-14 15:20:01.708  INFO 5488 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/jooq'
+2018-06-14 15:20:01.717  INFO 5488 --- [main] com.jin.jooq.JooqApplication             : Started JooqApplication in 6.288 seconds (JVM running for 7.346)
+2018-06-14 15:20:01.723  INFO 5488 --- [main] c.j.j.l.StartApplicationSuccessListener  : **********************************************************************************
+2018-06-14 15:20:01.724  INFO 5488 --- [main] c.j.j.l.StartApplicationSuccessListener  : *******************   PATH: 127.0.0.1:8080/jooq/   ******************
+2018-06-14 15:20:01.724  INFO 5488 --- [main] c.j.j.l.StartApplicationSuccessListener  : **********************************************************************************
+2018-06-14 15:20:09.573  INFO 5488 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/jooq]   : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-06-14 15:20:09.574  INFO 5488 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-06-14 15:20:09.597  INFO 5488 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 23 ms
+2018-06-14 15:20:09.678  INFO 5488 --- [http-nio-8080-exec-2] org.jooq.Constants                       : 
+                                      
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@  @@        @@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@        @@@@@@@@@@
+@@@@@@@@@@@@@@@@  @@  @@    @@@@@@@@@@
+@@@@@@@@@@  @@@@  @@  @@    @@@@@@@@@@
+@@@@@@@@@@        @@        @@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@        @@        @@@@@@@@@@
+@@@@@@@@@@    @@  @@  @@@@  @@@@@@@@@@
+@@@@@@@@@@    @@  @@  @@@@  @@@@@@@@@@
+@@@@@@@@@@        @@  @  @  @@@@@@@@@@
+@@@@@@@@@@        @@        @@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@  @@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  Thank you for using jOOQ 3.10.7
+                                      
+2018-06-14 15:20:09.702  INFO 5488 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-06-14 15:20:09.910  INFO 5488 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-06-14 15:52:42.936  INFO 3156 --- [main] com.jin.jooq.JooqApplication             : Starting JooqApplication on DESKTOP-N6E2IPT with PID 3156 (C:\qt\git\project\jooq\target\classes started by Tiffany in C:\qt\git\project\jooq)
+2018-06-14 15:52:42.942  INFO 3156 --- [main] com.jin.jooq.JooqApplication             : No active profile set, falling back to default profiles: default
+2018-06-14 15:52:43.074  INFO 3156 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@49c386c8: startup date [Thu Jun 14 15:52:43 CST 2018]; root of context hierarchy
+2018-06-14 15:52:44.206  INFO 3156 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-06-14 15:52:44.638  INFO 3156 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$294588ad] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-14 15:52:44.958  INFO 3156 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-06-14 15:52:44.985  INFO 3156 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-06-14 15:52:44.985  INFO 3156 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-06-14 15:52:44.993  INFO 3156 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_121\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Java\jdk1.8.0_121\bin\;C:\ORACLE\instantclient_11_2;C:\Program Files\Java\jdk1.8.0_121\jre\bin;C:\Android\android-sdk-windows;C:\Android\android-sdk-windows\platforms;C:\Android\android-sdk-windows\tools;C:\Program Files (x86)\Appium\node_modules\.bin;C:\Program Files (x86)\Appium;C:\Software\apache-maven-3.3.9\bin;C:\qt\git\Git\cmd;C:\qt\node\;C:\Users\Tiffany\AppData\Local\Microsoft\WindowsApps;C:\Users\Tiffany\AppData\Roaming\npm;.]
+2018-06-14 15:52:45.092  INFO 3156 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/jooq]   : Initializing Spring embedded WebApplicationContext
+2018-06-14 15:52:45.092  INFO 3156 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2018 ms
+2018-06-14 15:52:45.229  INFO 3156 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-06-14 15:52:45.234  INFO 3156 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-06-14 15:52:45.234  INFO 3156 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-06-14 15:52:45.235  INFO 3156 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-06-14 15:52:45.235  INFO 3156 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-06-14 15:52:46.071  INFO 3156 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-14 15:52:46.426  INFO 3156 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@49c386c8: startup date [Thu Jun 14 15:52:43 CST 2018]; root of context hierarchy
+2018-06-14 15:52:46.480  INFO 3156 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/demo]}" onto public java.lang.String com.jin.jooq.controller.DemoController.demoController()
+2018-06-14 15:52:46.481  INFO 3156 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/demo2]}" onto public java.lang.String com.jin.jooq.controller.DemoController.demoController2()
+2018-06-14 15:52:46.482  INFO 3156 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/demo3]}" onto public java.lang.String com.jin.jooq.controller.DemoController.demoController3()
+2018-06-14 15:52:46.487  INFO 3156 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-06-14 15:52:46.488  INFO 3156 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-06-14 15:52:46.514  INFO 3156 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-14 15:52:46.515  INFO 3156 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-14 15:52:47.116  INFO 3156 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-06-14 15:52:47.118  INFO 3156 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-06-14 15:52:47.123  INFO 3156 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-06-14 15:52:47.163  INFO 3156 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/jooq'
+2018-06-14 15:52:47.168  INFO 3156 --- [main] com.jin.jooq.JooqApplication             : Started JooqApplication in 4.991 seconds (JVM running for 6.449)
+2018-06-14 15:52:47.172  INFO 3156 --- [main] c.j.j.l.StartApplicationSuccessListener  : **********************************************************************************
+2018-06-14 15:52:47.172  INFO 3156 --- [main] c.j.j.l.StartApplicationSuccessListener  : *******************   PATH: 127.0.0.1:8080/jooq/   ******************
+2018-06-14 15:52:47.173  INFO 3156 --- [main] c.j.j.l.StartApplicationSuccessListener  : **********************************************************************************
+2018-06-14 15:53:15.518  INFO 3156 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/jooq]   : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-06-14 15:53:15.519  INFO 3156 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-06-14 15:53:15.543  INFO 3156 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 24 ms
+2018-06-14 15:53:15.628  INFO 3156 --- [http-nio-8080-exec-1] org.jooq.Constants                       : 
+                                      
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@  @@        @@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@        @@@@@@@@@@
+@@@@@@@@@@@@@@@@  @@  @@    @@@@@@@@@@
+@@@@@@@@@@  @@@@  @@  @@    @@@@@@@@@@
+@@@@@@@@@@        @@        @@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@        @@        @@@@@@@@@@
+@@@@@@@@@@    @@  @@  @@@@  @@@@@@@@@@
+@@@@@@@@@@    @@  @@  @@@@  @@@@@@@@@@
+@@@@@@@@@@        @@  @  @  @@@@@@@@@@
+@@@@@@@@@@        @@        @@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@  @@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  Thank you for using jOOQ 3.10.7
+                                      
+2018-06-14 15:53:15.673  INFO 3156 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-06-14 15:53:15.892  INFO 3156 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-06-14 15:53:55.508  INFO 14548 --- [main] com.jin.jooq.JooqApplication             : Starting JooqApplication on DESKTOP-N6E2IPT with PID 14548 (C:\qt\git\project\jooq\target\classes started by Tiffany in C:\qt\git\project\jooq)
+2018-06-14 15:53:55.513  INFO 14548 --- [main] com.jin.jooq.JooqApplication             : No active profile set, falling back to default profiles: default
+2018-06-14 15:53:55.678  INFO 14548 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3c22fc4c: startup date [Thu Jun 14 15:53:55 CST 2018]; root of context hierarchy
+2018-06-14 15:53:56.906  INFO 14548 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-06-14 15:53:57.408  INFO 14548 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$33b24cd7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-14 15:53:57.776  INFO 14548 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-06-14 15:53:57.915  INFO 14548 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-06-14 15:53:57.917  INFO 14548 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-06-14 15:53:57.925  INFO 14548 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_121\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Java\jdk1.8.0_121\bin\;C:\ORACLE\instantclient_11_2;C:\Program Files\Java\jdk1.8.0_121\jre\bin;C:\Android\android-sdk-windows;C:\Android\android-sdk-windows\platforms;C:\Android\android-sdk-windows\tools;C:\Program Files (x86)\Appium\node_modules\.bin;C:\Program Files (x86)\Appium;C:\Software\apache-maven-3.3.9\bin;C:\qt\git\Git\cmd;C:\qt\node\;C:\Users\Tiffany\AppData\Local\Microsoft\WindowsApps;C:\Users\Tiffany\AppData\Roaming\npm;.]
+2018-06-14 15:53:58.169  INFO 14548 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/jooq]   : Initializing Spring embedded WebApplicationContext
+2018-06-14 15:53:58.172  INFO 14548 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2494 ms
+2018-06-14 15:53:58.410  INFO 14548 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-06-14 15:53:58.417  INFO 14548 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-06-14 15:53:58.417  INFO 14548 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-06-14 15:53:58.418  INFO 14548 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-06-14 15:53:58.419  INFO 14548 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-06-14 15:53:59.453  INFO 14548 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-14 15:53:59.798  INFO 14548 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3c22fc4c: startup date [Thu Jun 14 15:53:55 CST 2018]; root of context hierarchy
+2018-06-14 15:53:59.857  INFO 14548 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/demo3]}" onto public java.lang.String com.jin.jooq.controller.DemoController.demoController3()
+2018-06-14 15:53:59.858  INFO 14548 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/demo2]}" onto public java.lang.String com.jin.jooq.controller.DemoController.demoController2()
+2018-06-14 15:53:59.859  INFO 14548 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/demo]}" onto public java.lang.String com.jin.jooq.controller.DemoController.demoController()
+2018-06-14 15:53:59.867  INFO 14548 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-06-14 15:53:59.868  INFO 14548 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-06-14 15:53:59.896  INFO 14548 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-14 15:53:59.897  INFO 14548 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-14 15:54:00.611  INFO 14548 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-06-14 15:54:00.613  INFO 14548 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-06-14 15:54:00.623  INFO 14548 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-06-14 15:54:00.672  INFO 14548 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/jooq'
+2018-06-14 15:54:00.677  INFO 14548 --- [main] com.jin.jooq.JooqApplication             : Started JooqApplication in 5.825 seconds (JVM running for 7.005)
+2018-06-14 15:54:00.689  INFO 14548 --- [main] c.j.j.l.StartApplicationSuccessListener  : **********************************************************************************
+2018-06-14 15:54:00.689  INFO 14548 --- [main] c.j.j.l.StartApplicationSuccessListener  : *******************   PATH: 127.0.0.1:8080/jooq/   ******************
+2018-06-14 15:54:00.690  INFO 14548 --- [main] c.j.j.l.StartApplicationSuccessListener  : **********************************************************************************
+2018-06-14 15:54:03.825  INFO 14548 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/jooq]   : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-06-14 15:54:03.826  INFO 14548 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-06-14 15:54:03.851  INFO 14548 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 25 ms
+2018-06-14 15:54:03.939  INFO 14548 --- [http-nio-8080-exec-1] org.jooq.Constants                       : 
+                                      
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@  @@        @@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@        @@@@@@@@@@
+@@@@@@@@@@@@@@@@  @@  @@    @@@@@@@@@@
+@@@@@@@@@@  @@@@  @@  @@    @@@@@@@@@@
+@@@@@@@@@@        @@        @@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@        @@        @@@@@@@@@@
+@@@@@@@@@@    @@  @@  @@@@  @@@@@@@@@@
+@@@@@@@@@@    @@  @@  @@@@  @@@@@@@@@@
+@@@@@@@@@@        @@  @  @  @@@@@@@@@@
+@@@@@@@@@@        @@        @@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@  @@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  Thank you for using jOOQ 3.10.7
+                                      
+2018-06-14 15:54:03.971  INFO 14548 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-06-14 15:54:04.199  INFO 14548 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-06-14 15:54:04.226  INFO 14548 --- [http-nio-8080-exec-1] o.s.b.f.xml.XmlBeanDefinitionReader      : Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2018-06-14 15:54:04.308  INFO 14548 --- [http-nio-8080-exec-1] o.s.jdbc.support.SQLErrorCodesFactory    : SQLErrorCodes loaded: [DB2, Derby, H2, HDB, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase]
+2018-06-14 15:54:04.341 ERROR 14548 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[.[dispatcherServlet]      : Servlet.service() for servlet [dispatcherServlet] in context with path [/jooq] threw exception [Request processing failed; nested exception is org.springframework.dao.DuplicateKeyException: jOOQ; SQL [insert into `cyui`.`register` (`registerNo`, `address`, `age`, `registerName`, `role`, `status`) values (?, ?, ?, ?, ?, ?)Duplicate entry '4' for key 'PRIMARY'; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '4' for key 'PRIMARY'] with root cause
+
+com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '4' for key 'PRIMARY'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_121]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_121]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_121]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_121]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411) ~[mysql-connector-java-5.1.25.jar:na]
+	at com.mysql.jdbc.Util.getInstance(Util.java:386) ~[mysql-connector-java-5.1.25.jar:na]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1041) ~[mysql-connector-java-5.1.25.jar:na]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4187) ~[mysql-connector-java-5.1.25.jar:na]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4119) ~[mysql-connector-java-5.1.25.jar:na]
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2570) ~[mysql-connector-java-5.1.25.jar:na]
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2731) ~[mysql-connector-java-5.1.25.jar:na]
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2815) ~[mysql-connector-java-5.1.25.jar:na]
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:2155) ~[mysql-connector-java-5.1.25.jar:na]
+	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1379) ~[mysql-connector-java-5.1.25.jar:na]
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44) ~[HikariCP-2.7.9.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java) ~[HikariCP-2.7.9.jar:na]
+	at org.jooq.tools.jdbc.DefaultPreparedStatement.execute(DefaultPreparedStatement.java:209) ~[jooq-3.10.7.jar:na]
+	at org.jooq.impl.AbstractQuery.execute(AbstractQuery.java:429) ~[jooq-3.10.7.jar:na]
+	at org.jooq.impl.AbstractDMLQuery.execute(AbstractDMLQuery.java:452) ~[jooq-3.10.7.jar:na]
+	at org.jooq.impl.AbstractQuery.execute(AbstractQuery.java:347) ~[jooq-3.10.7.jar:na]
+	at org.jooq.impl.AbstractDelegatingQuery.execute(AbstractDelegatingQuery.java:127) ~[jooq-3.10.7.jar:na]
+	at com.jin.jooq.service.DemoServiceImpl.save(DemoServiceImpl.java:25) ~[classes/:na]
+	at com.jin.jooq.controller.DemoController.demoController3(DemoController.java:49) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_121]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_121]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_121]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_121]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209) ~[spring-web-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136) ~[spring-web-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102) ~[spring-webmvc-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877) ~[spring-webmvc-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783) ~[spring-webmvc-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991) ~[spring-webmvc-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925) ~[spring-webmvc-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974) ~[spring-webmvc-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866) ~[spring-webmvc-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851) ~[spring-webmvc-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109) ~[spring-web-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81) ~[spring-web-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) ~[spring-web-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+
+2018-06-14 15:54:50.101  INFO 7208 --- [main] com.jin.jooq.JooqApplication             : Starting JooqApplication on DESKTOP-N6E2IPT with PID 7208 (C:\qt\git\project\jooq\target\classes started by Tiffany in C:\qt\git\project\jooq)
+2018-06-14 15:54:50.108  INFO 7208 --- [main] com.jin.jooq.JooqApplication             : No active profile set, falling back to default profiles: default
+2018-06-14 15:54:50.221  INFO 7208 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2b6faea6: startup date [Thu Jun 14 15:54:50 CST 2018]; root of context hierarchy
+2018-06-14 15:54:51.364  INFO 7208 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-06-14 15:54:51.925  INFO 7208 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$10af0600] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-14 15:54:52.252  INFO 7208 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-06-14 15:54:52.286  INFO 7208 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-06-14 15:54:52.288  INFO 7208 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-06-14 15:54:52.294  INFO 7208 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_121\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Java\jdk1.8.0_121\bin\;C:\ORACLE\instantclient_11_2;C:\Program Files\Java\jdk1.8.0_121\jre\bin;C:\Android\android-sdk-windows;C:\Android\android-sdk-windows\platforms;C:\Android\android-sdk-windows\tools;C:\Program Files (x86)\Appium\node_modules\.bin;C:\Program Files (x86)\Appium;C:\Software\apache-maven-3.3.9\bin;C:\qt\git\Git\cmd;C:\qt\node\;C:\Users\Tiffany\AppData\Local\Microsoft\WindowsApps;C:\Users\Tiffany\AppData\Roaming\npm;.]
+2018-06-14 15:54:52.413  INFO 7208 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/jooq]   : Initializing Spring embedded WebApplicationContext
+2018-06-14 15:54:52.413  INFO 7208 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2192 ms
+2018-06-14 15:54:52.564  INFO 7208 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-06-14 15:54:52.571  INFO 7208 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-06-14 15:54:52.572  INFO 7208 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-06-14 15:54:52.572  INFO 7208 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-06-14 15:54:52.573  INFO 7208 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-06-14 15:54:53.308  INFO 7208 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-14 15:54:53.585  INFO 7208 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2b6faea6: startup date [Thu Jun 14 15:54:50 CST 2018]; root of context hierarchy
+2018-06-14 15:54:53.645  INFO 7208 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/demo3]}" onto public java.lang.String com.jin.jooq.controller.DemoController.demoController3()
+2018-06-14 15:54:53.646  INFO 7208 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/demo]}" onto public java.lang.String com.jin.jooq.controller.DemoController.demoController()
+2018-06-14 15:54:53.647  INFO 7208 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/demo2]}" onto public java.lang.String com.jin.jooq.controller.DemoController.demoController2()
+2018-06-14 15:54:53.652  INFO 7208 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-06-14 15:54:53.653  INFO 7208 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-06-14 15:54:53.686  INFO 7208 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-14 15:54:53.687  INFO 7208 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-14 15:54:54.364  INFO 7208 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-06-14 15:54:54.366  INFO 7208 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-06-14 15:54:54.373  INFO 7208 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-06-14 15:54:54.416  INFO 7208 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/jooq'
+2018-06-14 15:54:54.421  INFO 7208 --- [main] com.jin.jooq.JooqApplication             : Started JooqApplication in 4.949 seconds (JVM running for 6.081)
+2018-06-14 15:54:54.425  INFO 7208 --- [main] c.j.j.l.StartApplicationSuccessListener  : **********************************************************************************
+2018-06-14 15:54:54.425  INFO 7208 --- [main] c.j.j.l.StartApplicationSuccessListener  : *******************   PATH: 127.0.0.1:8080/jooq/   ******************
+2018-06-14 15:54:54.426  INFO 7208 --- [main] c.j.j.l.StartApplicationSuccessListener  : **********************************************************************************
+2018-06-14 15:54:57.716  INFO 7208 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/jooq]   : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-06-14 15:54:57.717  INFO 7208 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-06-14 15:54:57.753  INFO 7208 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 36 ms
+2018-06-14 16:49:42.014  INFO 17628 --- [main] com.jin.jooq.JooqApplication             : Starting JooqApplication on DESKTOP-N6E2IPT with PID 17628 (C:\qt\git\project\jooq\target\classes started by Tiffany in C:\qt\git\project\jooq)
+2018-06-14 16:49:42.020  INFO 17628 --- [main] com.jin.jooq.JooqApplication             : No active profile set, falling back to default profiles: default
+2018-06-14 16:49:42.138  INFO 17628 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7ee955a8: startup date [Thu Jun 14 16:49:42 CST 2018]; root of context hierarchy
+2018-06-14 16:49:44.034  INFO 17628 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-06-14 16:49:44.685  INFO 17628 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$93f016e1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-14 16:49:45.250  INFO 17628 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-06-14 16:49:45.282  INFO 17628 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-06-14 16:49:45.283  INFO 17628 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-06-14 16:49:45.291  INFO 17628 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_121\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Java\jdk1.8.0_121\bin\;C:\ORACLE\instantclient_11_2;C:\Program Files\Java\jdk1.8.0_121\jre\bin;C:\Android\android-sdk-windows;C:\Android\android-sdk-windows\platforms;C:\Android\android-sdk-windows\tools;C:\Program Files (x86)\Appium\node_modules\.bin;C:\Program Files (x86)\Appium;C:\Software\apache-maven-3.3.9\bin;C:\qt\git\Git\cmd;C:\qt\node\;C:\Users\Tiffany\AppData\Local\Microsoft\WindowsApps;C:\Users\Tiffany\AppData\Roaming\npm;.]
+2018-06-14 16:49:45.414  INFO 17628 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/jooq]   : Initializing Spring embedded WebApplicationContext
+2018-06-14 16:49:45.415  INFO 17628 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3278 ms
+2018-06-14 16:49:45.596  INFO 17628 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-06-14 16:49:45.603  INFO 17628 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-06-14 16:49:45.604  INFO 17628 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-06-14 16:49:45.604  INFO 17628 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-06-14 16:49:45.604  INFO 17628 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-06-14 16:49:46.483  INFO 17628 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-14 16:49:46.771  INFO 17628 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7ee955a8: startup date [Thu Jun 14 16:49:42 CST 2018]; root of context hierarchy
+2018-06-14 16:49:46.836  INFO 17628 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/demo3]}" onto public java.lang.String com.jin.jooq.controller.DemoController.demoController3()
+2018-06-14 16:49:46.837  INFO 17628 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/demo]}" onto public java.lang.String com.jin.jooq.controller.DemoController.demoController()
+2018-06-14 16:49:46.839  INFO 17628 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/demo2]}" onto public java.lang.String com.jin.jooq.controller.DemoController.demoController2()
+2018-06-14 16:49:46.845  INFO 17628 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-06-14 16:49:46.846  INFO 17628 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-06-14 16:49:46.879  INFO 17628 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-14 16:49:46.880  INFO 17628 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-14 16:49:47.616  INFO 17628 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-06-14 16:49:47.619  INFO 17628 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-06-14 16:49:47.626  INFO 17628 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-06-14 16:49:47.683  INFO 17628 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/jooq'
+2018-06-14 16:49:47.689  INFO 17628 --- [main] com.jin.jooq.JooqApplication             : Started JooqApplication in 6.367 seconds (JVM running for 8.048)
+2018-06-14 16:49:47.698  INFO 17628 --- [main] c.j.j.l.StartApplicationSuccessListener  : **********************************************************************************
+2018-06-14 16:49:47.698  INFO 17628 --- [main] c.j.j.l.StartApplicationSuccessListener  : *******************   PATH: 127.0.0.1:8080/jooq/   ******************
+2018-06-14 16:49:47.699  INFO 17628 --- [main] c.j.j.l.StartApplicationSuccessListener  : **********************************************************************************
+2018-06-14 16:49:58.686  INFO 17628 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/jooq]   : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-06-14 16:49:58.687  INFO 17628 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-06-14 16:49:58.715  INFO 17628 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 28 ms
+2018-06-14 16:49:58.804  INFO 17628 --- [http-nio-8080-exec-2] org.jooq.Constants                       : 
+                                      
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@  @@        @@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@        @@@@@@@@@@
+@@@@@@@@@@@@@@@@  @@  @@    @@@@@@@@@@
+@@@@@@@@@@  @@@@  @@  @@    @@@@@@@@@@
+@@@@@@@@@@        @@        @@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@        @@        @@@@@@@@@@
+@@@@@@@@@@    @@  @@  @@@@  @@@@@@@@@@
+@@@@@@@@@@    @@  @@  @@@@  @@@@@@@@@@
+@@@@@@@@@@        @@  @  @  @@@@@@@@@@
+@@@@@@@@@@        @@        @@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@  @@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  Thank you for using jOOQ 3.10.7
+                                      
+2018-06-14 16:49:58.829  INFO 17628 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-06-14 16:49:59.099  INFO 17628 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-06-14 17:00:26.231  INFO 15580 --- [main] com.jin.jooq.JooqApplication             : Starting JooqApplication on DESKTOP-N6E2IPT with PID 15580 (C:\qt\git\project\jooq\target\classes started by Tiffany in C:\qt\git\project\jooq)
+2018-06-14 17:00:26.242  INFO 15580 --- [main] com.jin.jooq.JooqApplication             : No active profile set, falling back to default profiles: default
+2018-06-14 17:00:26.401  INFO 15580 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4b5a5ed1: startup date [Thu Jun 14 17:00:26 CST 2018]; root of context hierarchy
+2018-06-14 17:00:27.999  INFO 15580 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-06-14 17:00:28.529  INFO 15580 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$bddbfc4d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-14 17:00:28.905  INFO 15580 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-06-14 17:00:28.937  INFO 15580 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-06-14 17:00:28.938  INFO 15580 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-06-14 17:00:28.948  INFO 15580 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_121\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Java\jdk1.8.0_121\bin\;C:\ORACLE\instantclient_11_2;C:\Program Files\Java\jdk1.8.0_121\jre\bin;C:\Android\android-sdk-windows;C:\Android\android-sdk-windows\platforms;C:\Android\android-sdk-windows\tools;C:\Program Files (x86)\Appium\node_modules\.bin;C:\Program Files (x86)\Appium;C:\Software\apache-maven-3.3.9\bin;C:\qt\git\Git\cmd;C:\qt\node\;C:\Users\Tiffany\AppData\Local\Microsoft\WindowsApps;C:\Users\Tiffany\AppData\Roaming\npm;.]
+2018-06-14 17:00:29.058  INFO 15580 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/jooq]   : Initializing Spring embedded WebApplicationContext
+2018-06-14 17:00:29.059  INFO 15580 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2659 ms
+2018-06-14 17:00:29.266  INFO 15580 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-06-14 17:00:29.285  INFO 15580 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-06-14 17:00:29.287  INFO 15580 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-06-14 17:00:29.288  INFO 15580 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-06-14 17:00:29.289  INFO 15580 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-06-14 17:00:30.357  INFO 15580 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-14 17:00:30.648  INFO 15580 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4b5a5ed1: startup date [Thu Jun 14 17:00:26 CST 2018]; root of context hierarchy
+2018-06-14 17:00:30.716  INFO 15580 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/selectone]}" onto public java.lang.String com.jin.jooq.controller.DemoController.demoController4()
+2018-06-14 17:00:30.717  INFO 15580 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/demo]}" onto public java.lang.String com.jin.jooq.controller.DemoController.demoController()
+2018-06-14 17:00:30.719  INFO 15580 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/demo2]}" onto public java.lang.String com.jin.jooq.controller.DemoController.demoController2()
+2018-06-14 17:00:30.719  INFO 15580 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/delete]}" onto public java.lang.String com.jin.jooq.controller.DemoController.demoController5()
+2018-06-14 17:00:30.719  INFO 15580 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/demo3]}" onto public java.lang.String com.jin.jooq.controller.DemoController.demoController3()
+2018-06-14 17:00:30.726  INFO 15580 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-06-14 17:00:30.727  INFO 15580 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-06-14 17:00:30.759  INFO 15580 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-14 17:00:30.759  INFO 15580 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-14 17:00:31.499  INFO 15580 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-06-14 17:00:31.501  INFO 15580 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-06-14 17:00:31.507  INFO 15580 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-06-14 17:00:31.550  INFO 15580 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/jooq'
+2018-06-14 17:00:31.556  INFO 15580 --- [main] com.jin.jooq.JooqApplication             : Started JooqApplication in 6.03 seconds (JVM running for 7.317)
+2018-06-14 17:00:31.560  INFO 15580 --- [main] c.j.j.l.StartApplicationSuccessListener  : **********************************************************************************
+2018-06-14 17:00:31.561  INFO 15580 --- [main] c.j.j.l.StartApplicationSuccessListener  : *******************   PATH: 127.0.0.1:8080/jooq/   ******************
+2018-06-14 17:00:31.561  INFO 15580 --- [main] c.j.j.l.StartApplicationSuccessListener  : **********************************************************************************
+2018-06-14 17:00:43.710  INFO 15580 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/jooq]   : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-06-14 17:00:43.711  INFO 15580 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-06-14 17:00:43.734  INFO 15580 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 23 ms
+2018-06-14 17:00:44.043  INFO 15580 --- [http-nio-8080-exec-1] org.jooq.Constants                       : 
+                                      
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@  @@        @@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@        @@@@@@@@@@
+@@@@@@@@@@@@@@@@  @@  @@    @@@@@@@@@@
+@@@@@@@@@@  @@@@  @@  @@    @@@@@@@@@@
+@@@@@@@@@@        @@        @@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@        @@        @@@@@@@@@@
+@@@@@@@@@@    @@  @@  @@@@  @@@@@@@@@@
+@@@@@@@@@@    @@  @@  @@@@  @@@@@@@@@@
+@@@@@@@@@@        @@  @  @  @@@@@@@@@@
+@@@@@@@@@@        @@        @@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@  @@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  Thank you for using jOOQ 3.10.7
+                                      
+2018-06-14 17:00:44.107  INFO 15580 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-06-14 17:00:44.344  INFO 15580 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-06-14 17:00:52.054 ERROR 15580 --- [http-nio-8080-exec-2] o.a.c.c.C.[.[.[.[dispatcherServlet]      : Servlet.service() for servlet [dispatcherServlet] in context with path [/jooq] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+
+java.lang.NullPointerException: null
+	at com.jin.jooq.controller.DemoController.demoController5(DemoController.java:70) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_121]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_121]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_121]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_121]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209) ~[spring-web-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136) ~[spring-web-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102) ~[spring-webmvc-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877) ~[spring-webmvc-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783) ~[spring-webmvc-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991) ~[spring-webmvc-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925) ~[spring-webmvc-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974) ~[spring-webmvc-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866) ~[spring-webmvc-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851) ~[spring-webmvc-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109) ~[spring-web-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81) ~[spring-web-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) ~[spring-web-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+
+2018-06-14 17:01:37.156  INFO 8548 --- [main] com.jin.jooq.JooqApplication             : Starting JooqApplication on DESKTOP-N6E2IPT with PID 8548 (C:\qt\git\project\jooq\target\classes started by Tiffany in C:\qt\git\project\jooq)
+2018-06-14 17:01:37.165  INFO 8548 --- [main] com.jin.jooq.JooqApplication             : No active profile set, falling back to default profiles: default
+2018-06-14 17:01:37.317  INFO 8548 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@75329a49: startup date [Thu Jun 14 17:01:37 CST 2018]; root of context hierarchy
+2018-06-14 17:01:38.632  INFO 8548 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-06-14 17:01:39.158  INFO 8548 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$585373bd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-14 17:01:39.558  INFO 8548 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-06-14 17:01:39.590  INFO 8548 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-06-14 17:01:39.591  INFO 8548 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-06-14 17:01:39.597  INFO 8548 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_121\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Java\jdk1.8.0_121\bin\;C:\ORACLE\instantclient_11_2;C:\Program Files\Java\jdk1.8.0_121\jre\bin;C:\Android\android-sdk-windows;C:\Android\android-sdk-windows\platforms;C:\Android\android-sdk-windows\tools;C:\Program Files (x86)\Appium\node_modules\.bin;C:\Program Files (x86)\Appium;C:\Software\apache-maven-3.3.9\bin;C:\qt\git\Git\cmd;C:\qt\node\;C:\Users\Tiffany\AppData\Local\Microsoft\WindowsApps;C:\Users\Tiffany\AppData\Roaming\npm;.]
+2018-06-14 17:01:39.716  INFO 8548 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/jooq]   : Initializing Spring embedded WebApplicationContext
+2018-06-14 17:01:39.717  INFO 8548 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2400 ms
+2018-06-14 17:01:39.928  INFO 8548 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-06-14 17:01:39.935  INFO 8548 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-06-14 17:01:39.935  INFO 8548 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-06-14 17:01:39.937  INFO 8548 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-06-14 17:01:39.941  INFO 8548 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-06-14 17:01:40.887  INFO 8548 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-14 17:01:41.252  INFO 8548 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@75329a49: startup date [Thu Jun 14 17:01:37 CST 2018]; root of context hierarchy
+2018-06-14 17:01:41.320  INFO 8548 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/demo3]}" onto public java.lang.String com.jin.jooq.controller.DemoController.demoController3()
+2018-06-14 17:01:41.321  INFO 8548 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/delete]}" onto public java.lang.String com.jin.jooq.controller.DemoController.demoController5()
+2018-06-14 17:01:41.322  INFO 8548 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/selectone]}" onto public java.lang.String com.jin.jooq.controller.DemoController.demoController4()
+2018-06-14 17:01:41.322  INFO 8548 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/demo2]}" onto public java.lang.String com.jin.jooq.controller.DemoController.demoController2()
+2018-06-14 17:01:41.322  INFO 8548 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/demo]}" onto public java.lang.String com.jin.jooq.controller.DemoController.demoController()
+2018-06-14 17:01:41.330  INFO 8548 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-06-14 17:01:41.332  INFO 8548 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-06-14 17:01:41.374  INFO 8548 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-14 17:01:41.374  INFO 8548 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-14 17:01:42.287  INFO 8548 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-06-14 17:01:42.290  INFO 8548 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-06-14 17:01:42.296  INFO 8548 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-06-14 17:01:42.343  INFO 8548 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/jooq'
+2018-06-14 17:01:42.347  INFO 8548 --- [main] com.jin.jooq.JooqApplication             : Started JooqApplication in 5.87 seconds (JVM running for 7.167)
+2018-06-14 17:01:42.352  INFO 8548 --- [main] c.j.j.l.StartApplicationSuccessListener  : **********************************************************************************
+2018-06-14 17:01:42.352  INFO 8548 --- [main] c.j.j.l.StartApplicationSuccessListener  : *******************   PATH: 127.0.0.1:8080/jooq/   ******************
+2018-06-14 17:01:42.352  INFO 8548 --- [main] c.j.j.l.StartApplicationSuccessListener  : **********************************************************************************
+2018-06-14 17:01:45.947  INFO 8548 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/jooq]   : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-06-14 17:01:45.948  INFO 8548 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-06-14 17:01:45.971  INFO 8548 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 23 ms
+2018-06-14 17:01:46.049  INFO 8548 --- [http-nio-8080-exec-1] org.jooq.Constants                       : 
+                                      
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@  @@        @@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@        @@@@@@@@@@
+@@@@@@@@@@@@@@@@  @@  @@    @@@@@@@@@@
+@@@@@@@@@@  @@@@  @@  @@    @@@@@@@@@@
+@@@@@@@@@@        @@        @@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@        @@        @@@@@@@@@@
+@@@@@@@@@@    @@  @@  @@@@  @@@@@@@@@@
+@@@@@@@@@@    @@  @@  @@@@  @@@@@@@@@@
+@@@@@@@@@@        @@  @  @  @@@@@@@@@@
+@@@@@@@@@@        @@        @@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@  @@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  Thank you for using jOOQ 3.10.7
+                                      
+2018-06-14 17:01:46.071  INFO 8548 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-06-14 17:01:46.342  INFO 8548 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-06-14 17:01:46.386 ERROR 8548 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[.[dispatcherServlet]      : Servlet.service() for servlet [dispatcherServlet] in context with path [/jooq] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+
+java.lang.NullPointerException: null
+	at com.jin.jooq.controller.DemoController.demoController5(DemoController.java:70) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_121]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_121]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_121]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_121]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209) ~[spring-web-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136) ~[spring-web-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102) ~[spring-webmvc-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877) ~[spring-webmvc-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783) ~[spring-webmvc-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991) ~[spring-webmvc-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925) ~[spring-webmvc-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974) ~[spring-webmvc-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866) ~[spring-webmvc-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851) ~[spring-webmvc-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109) ~[spring-web-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81) ~[spring-web-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) ~[spring-web-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+
