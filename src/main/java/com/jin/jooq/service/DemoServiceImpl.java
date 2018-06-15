@@ -48,7 +48,7 @@ public class DemoServiceImpl implements DemoService{
 
     @Override
     public List<Register> findAllGroudByStatus(Register register) {
-        List<Register> list = create.select().from(REGISTER).where(REGISTER.REGISTERNO.eq(register.getRegisterno())).groupBy(REGISTER.STATUS).fetchInto(Register.class);
+        List<Register> list = create.select().from(REGISTER).where(REGISTER.STATUS.eq(register.getStatus())).groupBy(REGISTER.STATUS).fetchInto(Register.class);
         return list;
     }
 

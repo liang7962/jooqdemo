@@ -83,8 +83,10 @@ public class DemoController {
     public @ResponseBody
     String demoController6() {
         Register register = new Register();
-        register.setRegisterno(4);
+        register.setStatus(0);
         List<Register> list = demoService.findAllGroudByStatus(register);
         return list.toString();
     }
+
+
 }
