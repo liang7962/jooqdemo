@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans.xsd
+	http://www.springframework.org/schema/context
+	http://www.springframework.org/schema/context/spring-context.xsd
+	http://www.springframework.org/schema/mvc
+    http://www.springframework.org/schema/mvc/spring-mvc-3.2.xsd "
+	default-autowire="byName">
+
+
+	<!-- 处理@responseBody注解引起的中文乱码问题 -->
+	<bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter">
+		<property name="messageConverters">
+			<list>
+				<bean class="org.springframework.http.converter.ByteArrayHttpMessageConverter" />
+				<bean class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter"/>
+				<bean class="org.springframework.http.converter.StringHttpMessageConverter">
+					<property name="supportedMediaTypes">
+						<list>
+							<value>text/plain;charset=UTF-8</value>
+						</list>
+					</property>
+				</bean>
+				<bean class="org.springframework.http.converter.ResourceHttpMessageConverter" />
+				<bean class="org.springframework.http.converter.xml.SourceHttpMessageConverter" />
+				<bean class="org.springframework.http.converter.xml.Jaxb2RootElementHttpMessageConverter" />
+			</list>
+		</property>
+	</bean>
+
+<!-- 	<context:property-placeholder location="classpath:/config/*.properties"/>  -->
+	
+	<context:component-scan base-package="com.jin.jooq" />
+	<context:annotation-config/>
+
+	<mvc:annotation-driven />
+
+	<!-- <mvc:interceptors>
+		<mvc:interceptor>
+			<mvc:mapping path="/mobile/**"/>
+			<bean class="com.soa.framework.auth.MobileAuthInterceptor">
+				<property name="noAuthUrl" value="/mobile/"></property>
+				<property name="acctSessionName" value="macctAuth"></property>
+			</bean>
+		</mvc:interceptor> -->
+		
+		<!-- <mvc:interceptor>
+			<mvc:mapping path="/web/**"/>
+			<bean class="com.soa.framework.auth.AuthInterceptor">
+				<property name="noAuthUrl" value="/web/"></property>
+				<property name="acctSessionName" value="acctAuth"></property>
+			</bean>
+		</mvc:interceptor>
+	</mvc:interceptors> -->
+	<!-- 防止下单页重复提交，pay-barcode -->
+	<!-- <mvc:interceptors>  
+    	<mvc:interceptor>  
+            <mvc:mapping path="/web/order/**"/>  
+            <bean class="com.soa.filter.RepeatTokenInterceptor"/>  
+        </mvc:interceptor>  
+    </mvc:interceptors> -->
+
+	
+	<!--freemarker配置信息 -->
+<!-- 	<bean id="freemarkerConfig" class="org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer">
+		<property name="templateLoaderPath" value="classpath:/templates/" />
+	</bean> -->
+	
+</beans>

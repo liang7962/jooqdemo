@@ -1,7 +1,7 @@
 package com.jin.jooq.demoTest;
 
 
-public class Person {
+public class Person extends com.jin.jooq.interfacedemo.Person {
     private String firstName, lastName, job, gender;
     private int salary, age;
 
