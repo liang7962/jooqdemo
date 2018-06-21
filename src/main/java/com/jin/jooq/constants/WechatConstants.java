@@ -17,7 +17,7 @@ public class WechatConstants {
     private static String appId;
     private static String appSecret;
 
-    @Value("${wecahrt.code.urll}")
+    @Value("${wecahrt.code.url}")
     public void setAskAuthizedUrl(String askAuthizedUrl) {
         WechatConstants.askAuthizedUrl = askAuthizedUrl;
     }

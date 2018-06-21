@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!--<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">-->
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+   <!-- <meta charset="UTF-8">-->
+    <title>Title</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+    <!--/*@thymesVar id="name" type="java.lang.String"*/-->
+    <p th:text="'Hello！, ' + ${name} + '!'" >3333</p>
+    <a th:href="@{http://blog.csdn.net/u012706811}">绝对路径</a>
+    <a th:href="@{/}">相对路径</a>
+    <a th:href="@{css/bootstrap.min.css}">Content路径,默认访问static下的css文件夹</a>
+    <a th:href="@{js/demo.js}">Content路径,默认访问static下的js文件夹</a>
+
+    <br>
+    <!--字符串替换-->
+    <!--很多时候可能我们只需要对一大段文字中的某一处地方进行替换，可以通过字符串拼接操作完成：-->
+    <span th:text="'Welcome to our application, ' + ${name} + '!'"></span>
+    <!--一种更简洁的方式是：-->
+    <br>
+    <!--这种形式限制比较多，|…|中只能包含变量表达式${…}，不能包含其他常量、条件表达式等-->
+    <span th:text="|Welcome to our application, ${name}!|"/>
+
+    <br>
+    <!--4.运算符-->/
+</body>
+</html>

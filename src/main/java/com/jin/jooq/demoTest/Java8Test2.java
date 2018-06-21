@@ -25,7 +25,8 @@ public class Java8Test2 {
     static int outerStaticNum;
     int outerNum;
 
-    @RequestMapping(name = "interface1",method = RequestMethod.GET)
+//    @RequestMapping(name = "interface84",method = RequestMethod.GET)
+    @RequestMapping( value = "interface84",method =RequestMethod.GET )
     @ResponseBody
     public String test1(){
         System.out.println(testInterface);

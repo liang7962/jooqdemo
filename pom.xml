@@ -73,6 +73,34 @@
 			<groupId>org.junit.jupiter</groupId>
 			<artifactId>junit-jupiter-api</artifactId>
 		</dependency>
+
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>fastjson</artifactId>
+			<version>1.2.6</version>
+		</dependency>
+
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-thymeleaf</artifactId>
+		</dependency>
+
+		<!--&lt;!&ndash; 代码热部署 &ndash;&gt;-->
+		<!--<dependency>-->
+			<!--<groupId>org.springframework</groupId>-->
+			<!--<artifactId>springloaded</artifactId>-->
+			<!--<version>1.2.6.RELEASE</version>-->
+		<!--</dependency>-->
+
+		<!--&lt;!&ndash; devtools可以实现页面热部署（即页面修改后会立即生效，这个可以直接在application.properties文件中配 置spring.thymeleaf.cache=false来实现），-->
+			<!--实现类文件热部署（类文件修改后不会立即生效），实现对属性文件的热部署。 即devtools会监听classpath下的文件变动，并且会立即重启应用（发生在保存时机），注意：因为其采用的虚拟机机制，-->
+			<!--该项重启是很快的 &ndash;&gt;-->
+		<!--<dependency>-->
+			<!--<groupId>org.springframework.boot</groupId>-->
+			<!--<artifactId>spring-boot-devtools</artifactId>-->
+			<!--<version>1.3.0.RELEASE</version>-->
+		<!--</dependency>-->
 	</dependencies>
 
 <!--	<build>
