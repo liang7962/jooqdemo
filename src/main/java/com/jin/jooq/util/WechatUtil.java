@@ -21,7 +21,14 @@ public class WechatUtil {
 
     private static Logger logger = LoggerFactory.getLogger(WechatUtil.class);
 
-    //生成从微信获取获取code的url
+
+
+    /**
+     * @author: jinliang
+     * @create: 2018/6/21 09:49
+     * @desc: 生成从微信获取获取code的url
+     * @param
+     **/
     //翻译：通用自动链路
     public static String generateAuthizedLink(String redirectMethod) {
         String url = WechatConstants.getAskAuthizedUrl();
@@ -180,7 +187,7 @@ public class WechatUtil {
      * @param
      * @author: jinliang
      * @create: 2018/6/20 19:29
-     * @desc: 获取accessToken
+     * @desc: 获取accessToken,判断accessToken是否过期
      **/
     public static String getWxAccessToken() {
         ReentrantLock lock = new ReentrantLock();
@@ -213,4 +220,16 @@ public class WechatUtil {
         return accessToken;
     }
 
+    /**
+     * 根据code获取unionId
+     * @param code
+     * @return
+     */
+    public static String getUnionId(String code) {
+        WxUserInfo wxUserInfo = getUserInfo(code);
+        if (null != wxUserInfo) {
+            return wxUserInfo.getUnionid();
+        }
+        return "";
+    }
 }
