@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Title</title>
+</head>
+<body>
+    <!--4.运算符-->
+    <p th:with="isEven=(${count} % 2 == 0)">正确</p>
+    <!--在表达式中可以使用各类算术运算符，例如+, -, *, /, %-->
+    <p th:if="${count} &gt; 1">正确 </p>
+    <!--逻辑运算符>, <, <=,>=，==,!=都可以使用，唯一需要注意的是使用<,>时需要用它的HTML转义符-->
+    <p th:text="'Execution mode is ' + ( (${execMode} == 'dev')? 'Development' : 'Production')"></p>
+    <!--5.条件-->
+    <!--if/unless--><!--Thymeleaf中使用th:if和th:unless属性进行条件判断，下面的例子中-->
+    <p th:text="'Hello！, ' + ${user} + '!'" >3333</p>
+    <!--th:unless于th:if恰好相反，只有表达式中的条件不成立，才会显示其内容。-->
+    <a th:href="@{/login}" th:unless="${user==null}">Login</a>
+    <!--Switch Thymeleaf同样支持多路选择Switch结构：-->
+    <!--默认属性default可以用*表示：-->
+    <!--#{manager}还没有看出啥意思-->
+    <p th:text="'Hello！, ' + #{manager} + '!'" >3333</p>
+
+    <div th:switch="role">
+        <p th:case="admin">User is an administrato</p>
+        <p th:case="#{manager}">User is a manager</p>
+        <p th:case="*">User is some other thing  </p>
+    </div>
+
+    <!--循环-->
+    <!--渲染列表数据是一种非常常见的场景，例如现在有n条记录需要渲染成一个表格，该数据集合必须是可以遍历的，使用th:each标签：-->
+    <!--需要在被循环渲染的元素（这里是）中加入th:each标签，其中th:each=”prod : ${prods}”意味着对集合变量prods进行遍历，循环变量是prod在循环体中可以通过表达式访问。-->
+    <h1>Product list</h1>
+
+    <table>
+        <tr>
+            <th>NAME</th>
+            <th>PRICE</th>
+            <th>IN STOCK</th>
+        </tr>
+        <tr th:each="prod : ${prods}">
+            <td th:text="${prod.name}">Onions</td>
+            <td th:text="${prod.price}">2.41</td>
+            <td th:text="${prod.inStock}? #{true} : #{false}">yes</td>
+        </tr>
+    </table>
+
+    <p>
+        <a href="../home.html" th:href="@{/}">Return to home</a>
+    </p>
+</body>
+</html>
