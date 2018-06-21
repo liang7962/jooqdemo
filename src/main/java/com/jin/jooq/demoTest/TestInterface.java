@@ -26,4 +26,5 @@ public interface TestInterface {
     }
     //接口定义需要实现方法
     String showMsg();
+
 }

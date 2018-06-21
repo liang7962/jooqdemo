@@ -9,6 +9,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.annotation.Resource;
+import java.util.Objects;
+import java.util.function.Predicate;
 
 /**
  * Created by 金梁 on 2018/6/17.
@@ -104,11 +106,11 @@ public class Java8Test2 {
         /*和本地变量不同的是，lambda内部对于实例的字段以及静态变量是即可读又可写。该行为和匿名对象是一致的：*/
         Converter<Integer, String> stringConverter1 = (from) -> {
             outerNum = 23;
-            return String.valueOf(from);
+            return String.valueOf(from+outerNum);
         };
         Converter<Integer, String> stringConverter2 = (from) -> {
             outerStaticNum = 72;
-            return String.valueOf(from);
+            return String.valueOf(from+outerStaticNum);
         };
         System.out.println(stringConverter1.convert(58));
         System.out.println(stringConverter2.convert(58));
@@ -116,5 +118,20 @@ public class Java8Test2 {
     @Test
     public void test6(){
         testScopes();
+    }
+    /*访问接口的默认方法*/
+    @Test
+    public void test7(){
+        /*Predicate 接口只有一个参数，返回boolean类型。该接口包含多种默认方法来将Predicate组合成其他复杂的逻辑（比如：与，或，非）*/
+        Predicate<String> predicate=(s)->s.length()>0;
+        System.out.println(predicate.test("588"));
+        System.out.println(predicate.negate().test("58"));
+        Predicate<Boolean> nonNull = Objects::nonNull;
+        System.out.println(nonNull.test(false));
+        Predicate<Boolean> isNull = Objects::isNull;
+        System.out.println(isNull.test(true));
+        Predicate<String> isEmpty = String::isEmpty;
+        Predicate<String> isNotEmpty = isEmpty.negate();
+        System.out.println(isNotEmpty.test("58"));
     }
 }
