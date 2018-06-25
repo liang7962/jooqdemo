@@ -10,8 +10,6 @@ public class WechatConstants {
     private static String agreeAuthizedUrl; // 获取授权信息
     private static String accessTokenUrl; // 获取accessToken
     private static String userInfoUrl; //获取用户信息
-
-
     private static String domain;
     private static String authizedUrl;
     private static String appId;
