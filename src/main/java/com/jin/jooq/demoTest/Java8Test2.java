@@ -1,16 +1,17 @@
 package com.jin.jooq.demoTest;
 
-import com.jin.jooq.interfacedemo.PersonFactory;
 import org.junit.jupiter.api.Test;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.annotation.Resource;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 import java.util.function.Predicate;
+import java.util.stream.Collectors;
 
 /**
  * Created by 金梁 on 2018/6/17.
@@ -134,5 +135,30 @@ public class Java8Test2 {
         Predicate<String> isEmpty = String::isEmpty;
         Predicate<String> isNotEmpty = isEmpty.negate();
         System.out.println(isNotEmpty.test("58"));
+    }
+
+    @Test
+    public void test8(){
+        List<Integer> list=new ArrayList<>();
+        list.add(5);
+        list.add(78);
+        list.add(23);
+        list.add(23);
+        System.out.print(list.stream().filter(num->num!=5).count()+";");
+        /* distinct: 对于Stream中包含的元素进行去重操作（去重逻辑依赖元素的equals方法），新生成的Stream中没有重复的元素*/
+        /*filter: 对于Stream中包含的元素使用给定的过滤函数进行过滤操作，新生成的Stream只包含符合条件的元素；*/
+        System.out.print(list.stream().distinct().filter(num->num!=5).count()+";");
+        /*peek: 生成一个包含原Stream的所有元素的新Stream，*/
+        /* limit: 对一个Stream进行截断操作，获取其前N个元素，如果原Stream中包含的元素个数小于N，那就获取其所有的元素；*/
+        /* skip: 返回一个丢弃原Stream的前N个元素后剩下元素组成的新Stream，如果原Stream中包含的元素个数小于N，那么返回空Stream；*/
+        list.stream().mapToInt(num->num*5).peek(System.out::println).skip(2).limit(4).sum();
+        list.stream().filter(num->num!=5).collect(Collectors.toList());
+
+        /*map: 对于Stream中包含的元素使用给定的转换函数进行转换操作，新生成的Stream只包含转换生成的元素。这个方法有三个对于原始类型的变种方法，
+        分别是：mapToInt，mapToLong和mapToDouble。这三个方法也比较好理解，比如mapToInt就是把原始Stream转换成一个新的Stream，
+        这个新生成的Stream中的元素都是int类型。之所以会有这样三个变种方法，可以免除自动装箱/拆箱的额外消耗*/
+        List<Integer> collect = list.stream().map(num -> num * num).collect(Collectors.toList());
+
+        collect.stream().forEach((b)->System.out.print(b+">>>>>>>"));
     }
 }
